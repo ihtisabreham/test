@@ -17,7 +17,7 @@ nameElement.addEventListener('mouseenter', function() {
   nameInterval = setInterval(() => {
     nameElement.textContent = names[nameIndex];
     nameIndex = (nameIndex + 1) % names.length;
-  }, 50); // Change name every 500 milliseconds
+  }, 250); // Change name every 500 milliseconds
 });
 
 // On mouse leave, reset the background and stop changing the names
