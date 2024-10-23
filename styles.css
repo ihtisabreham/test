@@ -1,0 +1,10 @@
+/* Initial body background */
+body {
+  background-color: white; /* Default background color */
+  transition: background 0.3s ease;
+}
+
+/* Optionally set styles for the name element */
+#name {
+  cursor: pointer;
+}
