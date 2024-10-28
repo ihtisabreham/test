@@ -8,7 +8,7 @@ let nameInterval;
 // On mouse enter, change the body background to the uploaded GIF and start changing the names
 nameElement.addEventListener('mouseenter', function() {
     // Set the GIF as the background
-    document.body.style.backgroundImage = "url('https://dtlive.s3.ap-south-1.amazonaws.com/16830/SEO-and-Development-Animated-GIF-Icon-Pack.gif')";
+    document.body.style.backgroundImage = "url('https://dtlive.s3.ap-south-1.amazonaws.com/16830/SEO-and-Development-Animated-GIF-Icon-Pack-by-Discover-Template.gif')";
     
     // Start changing the names every 500ms
     nameInterval = setInterval(() => {
