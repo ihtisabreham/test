@@ -1,10 +1,40 @@
 /* Initial body background */
 body {
-  background-color: white; /* Default background color */
-  transition: background 0.5s ease;
+    background-color: white; /* Default background color */
+    transition: background 0.5s ease; /* Smooth transition for background changes */
+    height: 100%; /* Full height */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: Arial, sans-serif; /* Set a font */
+    overflow: hidden; /* Prevent scrolling */
 }
 
-/* Optionally set styles for the name element */
+/* Responsive font size for the name element */
 #name {
-  cursor: pointer;
+    font-size: 5vw; /* Responsive font size */
+    color: black; /* Change text color for visibility */
+    text-decoration: none; /* Remove underline from link */
+    padding: 10px; /* Add padding for better touch targets */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: background color for better visibility */
+    border-radius: 5px; /* Optional: rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
+
+/* Hover effect for name element */
+#name:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly change background on hover */
+}
+
+/* Focus styles for better accessibility */
+#name:focus {
+    outline: 2px solid blue; /* Add an outline on focus */
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 600px) {
+    #name {
+        font-size: 8vw; /* Larger font size for smaller screens */
+ 
