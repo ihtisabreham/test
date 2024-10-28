@@ -1,4 +1,4 @@
-lconst nameElement = document.getElementById('name');
+const nameElement = document.getElementById('name');
 
 // Array of names to loop through
 const names = ["Rasel", "Reham"];
