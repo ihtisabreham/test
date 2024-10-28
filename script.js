@@ -1,14 +1,14 @@
-const nameElement = document.getElementById('name');
+lconst nameElement = document.getElementById('name');
 
 // Array of names to loop through
-const names = ["Shanzid", "Imtiaz", "Reham"];
+const names = ["Rasel", "Reham"];
 let nameIndex = 0;
 let nameInterval;
 
 // On mouse enter, change the body background to the uploaded GIF and start changing the names
 nameElement.addEventListener('mouseenter', function() {
   // Set the GIF as the background
-  document.body.style.backgroundImage = "url('https://embedpress.com/wp-content/uploads/2022/06/How-To-Embed-Interactive-Gif-On-WordPress-Site-Without-Coding-1.gif')";
+  document.body.style.backgroundImage = "url('https://dtlive.s3.ap-south-1.amazonaws.com/16830/SEO-and-Development-Animated-GIF-Icon-Pack.gif')";
   document.body.style.backgroundSize = 'cover';
   document.body.style.backgroundRepeat = 'no-repeat';
   document.body.style.backgroundPosition = 'center';
