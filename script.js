@@ -9,10 +9,7 @@ let nameInterval;
 nameElement.addEventListener('mouseenter', function() {
     // Set the GIF as the background
     document.body.style.backgroundImage = "url('https://dtlive.s3.ap-south-1.amazonaws.com/16830/SEO-and-Development-Animated-GIF-Icon-Pack.gif')";
-    document.body.style.backgroundSize = 'cover';
-    document.body.style.backgroundRepeat = 'no-repeat';
-    document.body.style.backgroundPosition = 'center';
-
+    
     // Start changing the names every 500ms
     nameInterval = setInterval(() => {
         nameElement.textContent = names[nameIndex];
