@@ -1,7 +1,4 @@
-/* Initial body background */
-body {
-    background-color: white; /* Default background color */
-    transition: background 0.5s ease; /* Smooth transition for background changes */
+html, body {
     height: 100%; /* Full height */
     margin: 0; /* Remove default margin */
     display: flex; /* Use flexbox for centering */
@@ -9,32 +6,52 @@ body {
     align-items: center; /* Center vertically */
     font-family: Arial, sans-serif; /* Set a font */
     overflow: hidden; /* Prevent scrolling */
+    background-color: white; /* Default background color */
 }
 
-/* Responsive font size for the name element */
+/* Style for the name element */
 #name {
     font-size: 5vw; /* Responsive font size */
     color: black; /* Change text color for visibility */
     text-decoration: none; /* Remove underline from link */
     padding: 10px; /* Add padding for better touch targets */
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: background color for better visibility */
-    border-radius: 5px; /* Optional: rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Hover effect for name element */
 #name:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Slightly change background on hover */
+    background-color: rgba(255, 255, 255, 0.5); /* Change background on hover */
 }
 
 /* Focus styles for better accessibility */
 #name:focus {
-    outline: 2px solid blue; /* Add an outline on focus */
+    outline: 2px solid blue; /* Add outline on focus */
 }
 
-/* Additional styling for smaller screens */
+/* Background image settings */
+body {
+    background-image: url('https://dtlive.s3.ap-south-1.amazonaws.com/16830/SEO-and-Development-Animated-GIF-Icon-Pack.gif');
+    background-size: contain; /* Show full image */
+    background-repeat: no-repeat; /* Prevent repeating the background */
+    background-position: center; /* Center the background */
+}
+
+/* Media queries for different screen sizes */
 @media (max-width: 600px) {
     #name {
         font-size: 8vw; /* Larger font size for smaller screens */
- 
+    }
+
+    body {
+        background-size: contain; /* Keep background fully visible */
+    }
+}
+
+@media (min-width: 601px) {
+    body {
+        background-size: cover; /* Cover background on larger screens */
+    }
+}
