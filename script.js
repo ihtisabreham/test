@@ -26,7 +26,7 @@ nameElement.addEventListener('mouseleave', function() {
   document.body.style.backgroundImage = '';
 
   // Reset the name back to the original
-  nameElement.textContent = 'ihtishab';
+  nameElement.textContent = 'ihtisab';
 
   // Stop changing the names
   clearInterval(nameInterval);
